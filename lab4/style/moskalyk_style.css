@@ -1,0 +1,62 @@
+.left{
+	max-height: 700px;
+	float:left;
+	background-color: green;
+	overflow: scroll;
+	max-width: 20%;
+}
+.right{
+	float:left;
+	max-width: 50%;
+}
+.header_right, .footer_right{
+	background-color: blue;
+	overflow: scroll;
+}
+.body_right{
+	height: 700px;
+	overflow: scroll;
+}
+body{
+	display: inline-block;
+}
+.absolute{
+	position: absolute;
+	top: 1300px;
+}
+.fixed{
+	position: fixed;
+	top:100px;
+}
+.relative{
+	position: relative;
+	left:500px;
+}
+.static{
+	position: static;
+}
+.inherit{
+	position:inherit;
+}
+.right_float{
+	float:right;
+}
+.left_float{
+	float: left;
+}
+.right_clear{
+	clear:right;
+}
+.left_clear{
+	clear: left;
+}
+.z-index-2{
+	z-index: 2;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+.z-index-3{
+	z-index: 3;
+	position: absolute;
+}
