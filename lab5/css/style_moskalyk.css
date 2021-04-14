@@ -1,0 +1,31 @@
+mark{
+	background: white;
+	text-decoration: underline;
+}
+nav{
+	display: inline;
+	text-align: center;
+}
+figure{
+	float: left;
+}
+img{
+	height: 200px;
+}
+details{
+	width: 60%;
+}
+summary{
+  outline:none;
+}
+main{
+	float: left;
+	width: 80%;
+}
+aside{
+	float:right;
+	width: 20%;
+}
+footer{
+	vertical-align:bottom;
+}
