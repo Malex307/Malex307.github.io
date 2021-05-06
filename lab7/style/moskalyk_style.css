@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../font/moskalyk_20686.ttf");   
+}
+.right{
+    height: 100%;
+    background-color: white;
+    overflow: scroll;
+    max-width: calc(15%*2);;
+}
+div{
+    display: flex;
+    font-family: "Open Sans";
+}
+div::after{
+    content: attr(class);
+}
+.top, .bottom{
+    background-color: blue;
+    overflow: scroll;
+    max-height: 15%;
+}
+.left{
+    flex-direction: column;
+    max-width: 30%;
+}
+.center{
+    overflow: scroll;
+    max-height: 15%;
+}
+@media screen and (min-width: 900px) {
+    .right{
+      height:900px;
+    }
+}
