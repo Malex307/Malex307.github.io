@@ -1,0 +1,44 @@
+.button::before {
+    content: '\21D2';
+    margin-left: 10px;
+}
+.button::after {
+    content: '\21D0';
+}
+
+.button::first-letter {
+    color: blue;
+    font-size: large;
+}
+.button::first-line{
+    color: red;
+}
+a:active{
+    color: brown;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: burlywood;
+}
+a:link{
+    color: darkblue;
+}
+input:invalid {
+    background-color: red;
+
+}
+input:valid {
+    background-color: #ddffdd;
+}
+option:last-of-type{
+    background-color: orange;
+}
+textarea:read-only {
+    color: royalblue;
+}
+option:first-of-type{
+    background-color: black;
+}
+  
