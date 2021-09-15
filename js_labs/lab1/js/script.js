@@ -44,3 +44,61 @@ function factorial(n){
     }
     return sum;
 }
+
+function continent(){
+    let continent = main_form.continen.value;
+    let density;
+    let area;
+    switch(continent){
+        case 'Europa':
+            density = 188;
+            area = 10180000;
+            main_form.density.value = density;
+            main_form.area.value = area;
+            break;
+        case 'Africa':
+            density = 87;
+            area = 11730000;
+            main_form.density.value = density;
+            main_form.area.value = area;
+            break;
+        case 'Australia':
+            density = 8.3;
+            area = 3478200;
+            main_form.density.value = density;
+            main_form.area.value = area;
+            break;
+        case 'South America':
+            density = 57;
+            area = 6890000;
+            main_form.density.value = density;
+            main_form.area.value = area;
+            break;
+        case 'Asia':
+            density = 246;
+            area = 16920000;
+            main_form.density.value = density;
+            main_form.area.value = area;
+            break;
+        case 'North America':
+            density = 57;
+            area = 9460000;
+            main_form.density.value = density;
+            main_form.area.value = area;
+            break;
+        case 'Antarctica':
+            density = 0.00078;
+            area = 5300000;
+            main_form.density.value = density;
+            main_form.area.value = area;
+            break;
+        }
+    console.log();
+}
+
+function calculate_population(){
+    let density = main_form.density.value;
+    let area = main_form.area.value;
+    main_form.population.value = "" + density * area;
+}
+
