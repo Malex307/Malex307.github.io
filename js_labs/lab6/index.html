@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 6</title>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        let s = "dwbyu@mail.ua";
+        let r = /^([a-z0-9]+)(\.[a-z0-9]+)*@([a-z0-9]+)(\.[a-z0-9]+)*$/i;
+        let a = s.match(r);
+
+        for (i = 0; i < a.length; i++) {
+            document.writeln("<hr> a[" + i + "] " + a[i]);
+        }
+        no_zeros([1,2,null,0,''])
+    </script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <form>
+        <p>
+            <label>name</label>
+            <input type="text" id="name">
+            <label id="name_message"></label>
+        </p>
+        <p>
+            <label>surname</label>
+            <input type="text" id="surname">
+            <label id="surname_message"></label>
+        </p>
+        <p>
+            <label>nickname</label>
+            <input type="text" id="nickname">
+            <label id="nickname_message"></label>
+        </p>
+        <p>
+            <label>password</label>
+            <input type="password" id="password">
+            <label id="password_message"></label>
+        </p>
+        <p>
+            <label>zip code</label>
+            <input type="text" id="zip_code">
+            <label id="zip_code_message"></label>
+        </p>
+        <p>
+            <label>email</label>
+            <input type="email" id="email">
+            <label id="email_message"></label>
+        </p>
+        <input type="button" onclick="validate()">
+    </form>
+</body>
+
+</html>
