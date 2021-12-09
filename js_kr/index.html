@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+    <style>
+        div{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form name="myForm" id="myForm">
+    <label for="fullname">ПІБ(латинецею):</label>
+    <input type="text" name="fullname" id="fullname"><span style="color: red">*</span><br>
+    <div id="error_fullname"></div>
+    <label for="product_name">Найменування набору:</label>
+    <input type="text" name="product_name" id="product_name"><br>
+    <div id="error_product_name"></div>
+    <label for="price">Вартість комплекту:</label>
+    <input type="number" name="price" id="price"><br>
+    <div id="error_price"></div>
+    <label for="count">Кількість комплектів:</label>
+    <input type="number" name="count" id="count" min="1" max="100"><br>
+    <div id="error_count"></div>
+    <label for="birthday">Дата надходження:</label>
+    <input type="date" name="birthday" id="birthday"><br>
+    <div id="error_birthday"></div>
+    <label for="fullname_provider">ПІБ постачальника:</label>
+    <input type="text" name="fullname_provider" id="fullname_provider"><br>
+    <div id="error_fullname_provider"></div>
+    <label for="email">Електронна пошта:</label>
+    <input type="email" name="email" id="email"><br>
+    <div id="error_email"></div>
+    <label for="number">Телефон:</label>
+    <input type="text" name="number" id="number"><br>
+    <div id="error_number"></div>
+    <label>Перелік товарів:</label>
+    <input type="checkbox" id="product1" name="product1">
+    <label for="product1">Сорочка</label>
+    <input type="checkbox" id="product2" name="product2" checked>
+    <label for="product2">Туфлі</label>
+    <input type="checkbox" id="product3" name="product3">
+    <label for="product3">Штани</label><br>
+    <div id="error_checkbox"></div>
+    <label for="sizes">Розмір:</label><br>
+    <select name="sizes" id="sizes">
+        <option value="M">M</option>
+        <option value="L" selected>L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+    </select><span style="color: red">*</span><br>
+    <div id="error_sizes"></div>
+    <br>
+    <input type="button" value="Submit" onclick="validate()">
+    <input type="button" value="Clear" onclick="document.getElementById('myForm').reset();">
+</form>
+<table id="table">
+
+</table>
+</body>
+</html>
